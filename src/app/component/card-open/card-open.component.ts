@@ -14,16 +14,6 @@ export class CardOpenComponent implements OnInit {
 
   @Input() Status;
 
-  @Input() Codigo;
-  @Input() Cliente;
-  @Input() ClienteInfo;
-
-  @Input() Unidad;
-  @Input() Fiscal;
-  @Input() Periodo;
-  @Input() Integrantes;
-  @Input() Pais;
-
   @Input() listado;
   @Input() status;
 
