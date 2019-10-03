@@ -1,4 +1,11 @@
+* {
+    transition: all 0.5s ease-out;
+}
+
 .card_data {
+    button:focus {
+        outline: 0px;
+    }
     z-index: 1;
     position: relative;
     display: flex;
@@ -27,12 +34,29 @@
             position: relative;
             top: -5px;
         }
+        .title_info_data_primary {
+            font-size: 18px;
+            position: absolute;
+            bottom: 10px;
+            font-weight: 100!important;
+        }
+    }
+    .text_header {
+        font-size: 12px;
+    }
+    .title_h {
+        font-size: 18px;
+        font-weight: bold;
     }
     .unidad_info {
+        position: relative;
         .title_info_data_primary {
-            margin-top: 20px;
-            font-size: 22px;
+            font-size: 18px;
             color: #444;
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
         }
         .data {
             font-size: 12px;

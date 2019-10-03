@@ -4,54 +4,24 @@
         <!-- Status Card -->
         <div class="status" [style.background-color]="Status"></div>
 
-        <!-- Info Principal -->
-        <div class="title_info">
-            <!-- Titulo -->
-            <p class="text_header"><small>Proyecto <b>{{Codigo}}</b></small></p>
-            <!-- ./ -->
-            <p class="title_info_data_primary">{{Cliente}}</p>
-            <p class="title_info_data_secondary mb-0"><small>{{ClienteInfo}}</small></p>
-        </div>
-
         <!-- Unidad -->
-        <div class="unidad_info">
-            <!-- Titulo -->
-            <p class="text_header"><small>Unidad de cuenta</small></p>
-            <!-- ./ -->
-            <p class="title_info_data_primary">{{Unidad}}</p>
-        </div>
+        <div class="" *ngFor="let x of columnsH; let i = index" [ngClass]="(i === 0)?'title_info':'unidad_info'">
 
-        <!-- Año fiscal -->
-        <div class="unidad_info">
-            <!-- Titulo -->
-            <p class="text_header"><small>Año fiscal</small></p>
-            <!-- ./ -->
-            <p class="title_info_data_primary">{{Fiscal}}</p>
-        </div>
+            <!-- Solo primer elemento -->
+            <p class="text_header" *ngIf="i===0"><small>Proyecto <b>{{x.extraInfo}}</b></small></p>
 
-        <!-- Periodo -->
-        <div class="unidad_info">
-            <!-- Titulo -->
-            <p class="text_header"><small>Periodo</small></p>
-            <!-- ./ -->
-            <p class="title_info_data_primary data">{{Periodo}}</p>
-        </div>
+            <!-- Solo primer elemento -->
+            <p *ngIf="i===0" class="title_h"> {{x.title}} </p>
 
+            <!-- Solo primer elemento -->
+            <p *ngIf="i===0" class="title_info_data_primary">{{x.data}}</p>
 
-        <!-- Integrantes -->
-        <div class="unidad_info">
-            <!-- Titulo -->
-            <p class="text_header "><small>Integrantes</small></p>
-            <!-- ./ -->
-            <p class="title_info_data_primary ">{{Integrantes}}</p>
-        </div>
+            <!-- Despues del primer elemento -->
+            <p *ngIf="i!==0" class="text_header"><small>{{x.title}}</small></p>
 
-        <!-- Pais -->
-        <div class="unidad_info">
-            <!-- Titulo -->
-            <p class="text_header"><small>País</small></p>
-            <!-- ./ -->
-            <p class="title_info_data_primary ">{{Pais}}</p>
+            <!-- Despues del primer elemento -->
+            <p *ngIf="i!==0" class="title_info_data_primary">{{x.data}}</p>
+
         </div>
 
         <!-- Call to action -->

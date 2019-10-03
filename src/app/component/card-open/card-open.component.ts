@@ -5,6 +5,11 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './card-open.component.html',
   styleUrls: ['./card-open.component.scss']
 })
+
+// export interface DataCard {
+//   header: string[];
+// }
+
 export class CardOpenComponent implements OnInit {
 
   @Input() Status;
@@ -22,6 +27,8 @@ export class CardOpenComponent implements OnInit {
   @Input() listado;
   @Input() status;
 
+  @Input() columnsH;
+
   isOpened: boolean;
   isRunning;
 
@@ -30,6 +37,7 @@ export class CardOpenComponent implements OnInit {
   }
 
   ngOnInit() {
+
   }
 
   statusCard() {
