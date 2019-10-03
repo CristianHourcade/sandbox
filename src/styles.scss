@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background: rgb(254, 254, 254);
+}
+
+* {
+    transition: all 0.5s ease-out;
+}
+
+button:focus {
+    outline: 0px;
+}

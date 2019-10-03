@@ -1,0 +1,69 @@
+<div [style.height]="isOpened ? '90px':calculateHeight()">
+
+    <div class="card_data">
+        <!-- Status Card -->
+        <div class="status" [style.background-color]="Status"></div>
+
+        <!-- Info Principal -->
+        <div class="title_info">
+            <!-- Titulo -->
+            <p class="text_header"><small>Proyecto <b>{{Codigo}}</b></small></p>
+            <!-- ./ -->
+            <p class="title_info_data_primary">{{Cliente}}</p>
+            <p class="title_info_data_secondary mb-0"><small>{{ClienteInfo}}</small></p>
+        </div>
+
+        <!-- Unidad -->
+        <div class="unidad_info">
+            <!-- Titulo -->
+            <p class="text_header"><small>Unidad de cuenta</small></p>
+            <!-- ./ -->
+            <p class="title_info_data_primary">{{Unidad}}</p>
+        </div>
+
+        <!-- Año fiscal -->
+        <div class="unidad_info">
+            <!-- Titulo -->
+            <p class="text_header"><small>Año fiscal</small></p>
+            <!-- ./ -->
+            <p class="title_info_data_primary">{{Fiscal}}</p>
+        </div>
+
+        <!-- Periodo -->
+        <div class="unidad_info">
+            <!-- Titulo -->
+            <p class="text_header"><small>Periodo</small></p>
+            <!-- ./ -->
+            <p class="title_info_data_primary data">{{Periodo}}</p>
+        </div>
+
+
+        <!-- Integrantes -->
+        <div class="unidad_info">
+            <!-- Titulo -->
+            <p class="text_header "><small>Integrantes</small></p>
+            <!-- ./ -->
+            <p class="title_info_data_primary ">{{Integrantes}}</p>
+        </div>
+
+        <!-- Pais -->
+        <div class="unidad_info">
+            <!-- Titulo -->
+            <p class="text_header"><small>País</small></p>
+            <!-- ./ -->
+            <p class="title_info_data_primary ">{{Pais}}</p>
+        </div>
+
+        <!-- Call to action -->
+        <div class="call_to_action">
+            <button>Ver feedback</button>
+        </div>
+
+        <!-- Open Card -->
+        <div class="open_card">
+            <button (click)="statusCard()"><i class="material-icons">expand_more</i></button>
+        </div>
+    </div>
+
+    <app-info-card [listado]="listado" [status]="status"></app-info-card>
+</div>

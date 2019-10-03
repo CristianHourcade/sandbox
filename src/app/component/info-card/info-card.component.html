@@ -1,0 +1,20 @@
+<div class="cont_info" [ngClass]="classToAdd" [style.height]="(classToAdd === 'to_end')?'auto':'0px'">
+    <div class="scale_data" [style.transform]="(classToAdd === 'to_end')?'scaleY(1)':'scaleY(0)'">
+        <div class="info_card">
+            <div class="head_card_info">
+                <div class="primary_element">
+                    <a>Nombre y apellido</a>
+                </div>
+
+                <div class="secondary_element">
+                    <a>Unidad Baufesiano</a>
+                </div>
+            </div>
+        </div>
+        <div class="body_card_info" [style.transform]="(classToAdd === 'to_end')?'scaleY(1)':'scaleY(0)'">
+            <div *ngFor="let x of listado;let i = index">
+                <app-card-item-list [item]="x" [index]="i"></app-card-item-list>
+            </div>
+        </div>
+    </div>
+</div>

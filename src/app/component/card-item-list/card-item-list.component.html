@@ -1,0 +1,40 @@
+<div class="card_data" [style.background-color]="(index%2 === 0)?'#CFD8DC':'#E1E6E9'">
+    <!-- Status Card -->
+    <div class="status" [style.background-color]="item.status"></div>
+
+    <!-- Info Principal -->
+    <div class="title_info d-flex">
+        <!-- Titulo -->
+        <!-- ./ -->
+        <p class="title_info_data_primary my-auto mx-auto">{{item.nombre}}</p>
+    </div>
+
+    <!-- Unidad -->
+    <div class="unidad_info d-flex">
+        <p class="title_info_data_primary my-auto mx-auto">{{item.unidad}}</p>
+    </div>
+
+    <!-- Año fiscal -->
+    <div class="unidad_info d-flex">
+        <p class="title_info_data_primary my-auto mx-auto">{{item.rol}}</p>
+    </div>
+
+    <!-- Periodo -->
+    <div class="unidad_info d-flex">
+        <p class="title_info_data_primary data my-auto mx-auto">{{item.horas}}</p>
+    </div>
+
+
+    <!-- Integrantes -->
+    <div class="unidad_info d-flex">
+        <p class="title_info_data_primary my-auto mx-auto ">{{item.Evaluador}}</p>
+    </div>
+
+
+    <!-- Call to action -->
+    <div class="call_to_action">
+        <button>Ver feedback</button>
+    </div>
+
+
+</div>
