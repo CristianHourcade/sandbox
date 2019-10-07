@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { CardOpenComponent } from './component/card-open/card-open.component';
 import { InfoCardComponent } from './component/info-card/info-card.component';
 import { CardItemListComponent } from './component/card-item-list/card-item-list.component';
+import { SidenavComponent } from './component/sidenav/sidenav.component';
+import { HomeExampleComponent } from './component/home-example/home-example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardOpenComponent,
     InfoCardComponent,
-    CardItemListComponent
+    CardItemListComponent,
+    SidenavComponent,
+    HomeExampleComponent
   ],
   imports: [
     BrowserModule,
