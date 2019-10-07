@@ -4,8 +4,49 @@ nav {
     width: 125px;
     background: black;
     height: 100%;
+    .header_side {
+        .foto_perfil {
+            height: 125px;
+            width: 100%;
+            // background: white;
+            padding: 15px;
+            img {
+                width: 100%
+            }
+        }
+    }
+    .items {
+        position: relative;
+        top: 10%;
+        .item_nav {
+            height: 60px;
+            display: flex;
+            a {
+                color: white;
+                margin-left: auto;
+                padding-right: 15px;
+                margin-top: auto;
+                margin-bottom: auto;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 .content_web {
     margin-left: 125px;
+    background: rgb(246, 245, 245);
+}
+
+.toolbar_b {
+    z-index: 9;
+    position: fixed;
+    background: white;
+    left: 125px;
+    width: calc( 100% - 125px);
+    box-shadow: 0px 0px 7px -4px black;
+    height: 60px;
+    img {
+        height: 100%;
+    }
 }
